@@ -1,0 +1,101 @@
+.button_box{
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .btn{
+        float: right;
+        cursor: pointer;
+    }
+}
+.clearfix{
+    clear:both;
+}
+.onesmallelementbox{
+    padding-bottom: 16px;
+    
+    .onesmallelement{
+        float:left;
+        padding:3px 5px;
+        border: 1px solid rgb(92, 194, 235);
+        border-radius: 4px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: move;
+        position: relative;
+
+        @w: 18px;
+        b{
+            box-sizing:border-box;
+            position: absolute;
+            width: @w;
+            height: @w;
+            border-radius: 50%;
+            border:2px solid#bdb9b9;
+            color:white;
+            background:#FF9800;
+            right:-@w/2;
+            top:-@w/2;
+            text-align: center;
+            line-height: 13px;
+            font-size: 10px; 
+            cursor: pointer;
+
+            &:hover{
+                background:gold;
+            }
+        }
+    }
+}
+.beixuanbox{
+    span{
+        .onesmallelementbox .onesmallelement();
+        cursor: pointer;
+    }
+}
+
+.mi_btn_box{
+    display: flex;
+    flex-direction: row-reverse;
+
+    .cancelbtn{
+        margin-left: 10px;
+    }
+}
+
+.c_span{
+    padding:4px 6px;
+    border:1px solid #eee;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+    &:hover{
+        background: #eee;
+    }
+
+    &.cur{
+        background:orange;
+        color:white;
+    }
+}
+.myrow{
+    padding: 10px 0;
+}
+.tagsbox{
+    padding: 10px 0;
+}
+
+.bsfilter_box{
+    .ant-tabs-nav .ant-tabs-tab{
+        padding: 0 16px 5px;
+    }
+    .tab_a{
+        margin-right: 10px;
+        padding:4px 7px;
+
+        &.cur{
+            background-color: orange;
+            color:white;
+        }
+    }
+}

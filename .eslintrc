@@ -1,0 +1,56 @@
+{
+    "parserOptions": { 
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true,
+            "legacyDecorators": true
+        }
+    },
+    "extends": "eslint:recommended",
+    "parser": "babel-eslint",
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "semi": [2, "always"],
+        "quotes": [2, "single"],
+        "no-alert": [2],
+        "no-array-constructor": [2],
+        "no-console": [0],
+        "no-const-assign": [2],
+        "no-constant-condition": [2],
+        "no-dupe-keys": [2],
+        "no-dupe-args": [2],
+        "no-extra-parens": [2],
+        "no-extra-semi": [2],
+        "no-floating-decimal": [2],
+        "no-inline-comments": [2],
+        "no-multi-spaces": [2],
+        "no-multiple-empty-lines": [2, {"max": 2}],
+        "no-redeclare": [2],
+        "no-sequences": [2],
+        "no-sparse-arrays": [2],
+        "no-spaced-func": [2],
+        "no-trailing-spaces": [2],
+        "no-undef": [0],
+        "no-var": [2],
+        "array-bracket-spacing": [2, "never"],
+        "comma-dangle": [2, "never"],
+        "comma-style": [2, "last"],
+        "eqeqeq": [2],
+        "generator-star-spacing": [2],
+        "indent": [2, 4],
+        "react/jsx-indent": [2, 4],
+        "space-infix-ops": [2],
+        "no-unused-vars": [0],
+        "key-spacing": [0, { "beforeColon": false, "afterColon": true }],
+        "react/jsx-uses-react": [2],
+        "brace-style": [2, "1tbs"],
+        "comma-spacing": [2],
+        "space-before-function-paren": [2],
+        "keyword-spacing": [2],
+        "object-curly-spacing": [2]
+    }
+}
