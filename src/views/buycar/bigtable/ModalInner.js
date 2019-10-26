@@ -23,7 +23,6 @@ export default class ModalInner extends Component {
     }
 
     deloneitem (english) {
-        console.log('儿子，尼乐山' + english);
         this.setState({
             'columnArr': this.state.columnArr.filter(item => item !== english),
             'beixuanArr': [...this.state.beixuanArr, english]

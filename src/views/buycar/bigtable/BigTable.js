@@ -69,6 +69,7 @@ export default class BigTable extends Component {
                         }}
                     />
                 </div>
+                <h3>共{this.props.total}辆车</h3>
                 <Table
                     rowKey="id"
                     columns={

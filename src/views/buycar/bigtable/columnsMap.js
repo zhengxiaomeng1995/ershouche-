@@ -9,12 +9,12 @@ export default {
     'id': {
         'title': '编号'
     },
-    'img': {
+    'image': {
         'title': '图片',
         'render': (txt, {id}) => {
             return <div>
                 <Link to={'/buycar/bigtable/' + id}>
-                    <img src={`http://www.aiqianduan.com:7897/images/carimages_small/${id}/view/${txt}`} />
+                    <img src={`/api/images/carimages_small/${id}/view/${txt}`} />
                 </Link>
             </div>;
         }
